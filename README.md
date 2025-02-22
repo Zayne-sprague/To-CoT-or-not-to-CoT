@@ -63,3 +63,16 @@ You can see examples in `scripts/example__calling_models.py` for details on how 
 ## Installing Gemini
 
 To get Gemini working you need a `google_service_key.json`, a project ID, a project location, threshold limits setup (on the console) and then to be logged in via the CLI.  There has to be an easier way, but for now that's how this was setup.
+
+
+# [Optional] Install Redis for caching  
+
+We cache all LLM calls (openai and huggingface) with keys based on the prompt and model parameters to speed up evaluations.
+
+To do this, we used [Redis](https://redis.io/docs/clients/python/)
+
+Easiest way to install it is (for linux)
+1. `apt-get install redis`
+2. `redis-server`
+
+Alternatively you can run our code without redis or disable the cache entirely by commenting out the lines `cache.enable()`.
