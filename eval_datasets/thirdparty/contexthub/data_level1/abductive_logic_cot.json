@@ -1,0 +1,32 @@
+[
+    {
+        "answers": false,
+        "inferences": "(aaa OR aab) -> aac = False.\nGiven aac is False, the value of premise (aaa OR aab) is False, thus, the value of aab is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\nGiven aac is False, what is the value of aab?."
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aaa OR aab) -> aac = True.\nGiven aac is True, the value of aaa can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\nGiven aac is True, what is the value of aaa?."
+    },
+    {
+        "answers": true,
+        "inferences": "(NOT aaa) -> aab = False.\nGiven aab is False, the value of premise (NOT aaa) is False, thus, the value of aaa is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(NOT aaa) -> aab.\nGiven aab is False, what is the value of aaa?."
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(NOT aaa) -> aab = True.\nGiven aab is True, the value of aaa can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(NOT aaa) -> aab.\nGiven aab is True, what is the value of aaa?."
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aaa AND aab) -> aac = False.\nGiven aac is False, the value of premise (aaa AND aab) is False, however, because the operation is 'AND', the value of aab can not be abduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa and aab) -> aac.\nGiven aac is False, what is the value of aab?."
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aaa AND aab) -> aac = True.\nGiven aac is True, the value of aab can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa and aab) -> aac.\nGiven aac is True, what is the value of aab?."
+    }
+]

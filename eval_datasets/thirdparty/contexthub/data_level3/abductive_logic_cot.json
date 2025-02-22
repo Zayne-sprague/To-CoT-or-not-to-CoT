@@ -1,0 +1,202 @@
+[
+    {
+        "answers": "N/A",
+        "inferences": "(NOT aad) -> aae = False.\nGiven aae is False, the value of premise (NOT aad) is False, thus, the value of aad is abduced as True.\n(NOT aac) -> aad = True.\nGiven aad is True, the value of aac can not be abduced and is set to be N/A.\n(aaa OR aab) -> aac = N/A.\nGiven aac is N/A, the value of aaa can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(NOT aad) -> aae.\nGiven aae is False, what is the value of aaa?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aag OR aak) -> aan = False.\nGiven aan is False, the value of premise (aag OR aak) is False, thus, the value of aag is abduced as False.\n(aac OR aaf) -> aag = False.\nGiven aag is False, the value of premise (aac OR aaf) is False, thus, the value of aaf is abduced as False.\n(aad OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aad OR aae) is False, thus, the value of aae is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aah or aai) -> aaj.\n(NOT aaj) -> aak.\n(aaa or aab) -> aac.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\n(aag or aak) -> aan.\nGiven aan is False, what is the value of aae?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(NOT aaf) -> aag = False.\nGiven aag is False, the value of premise (NOT aaf) is False, thus, the value of aaf is abduced as True.\n(aab OR aae) -> aaf = True.\nGiven aaf is True, the value of aae can not be abduced and is set to be N/A.\n(aac OR aad) -> aae = N/A.\nGiven aae is N/A, the value of aac can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aac or aad) -> aae.\n(NOT aaa) -> aab.\n(aab or aae) -> aaf.\n(NOT aaf) -> aag.\nGiven aag is False, what is the value of aac?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(NOT aad) -> aae = False.\nGiven aae is False, the value of premise (NOT aad) is False, thus, the value of aad is abduced as True.\n(NOT aac) -> aad = True.\nGiven aad is True, the value of aac can not be abduced and is set to be N/A.\n(aaa OR aab) -> aac = N/A.\nGiven aac is N/A, the value of aab can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(NOT aad) -> aae.\nGiven aae is False, what is the value of aab?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aad OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aad OR aaj) is False, thus, the value of aaj is abduced as False.\n(aag OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aag OR aai) is False, thus, the value of aai is abduced as False.\n(NOT aah) -> aai = False.\nGiven aai is False, the value of premise (NOT aah) is False, thus, the value of aah is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(aae or aaf) -> aag.\n(NOT aah) -> aai.\n(aag or aai) -> aaj.\n(aad or aaj) -> aak.\nGiven aak is False, what is the value of aah?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aad OR aak) -> aan = False.\nGiven aan is False, the value of premise (aad OR aak) is False, thus, the value of aad is abduced as False.\n(NOT aac) -> aad = False.\nGiven aad is False, the value of premise (NOT aac) is False, thus, the value of aac is abduced as True.\n(aaa OR aab) -> aac = True.\nGiven aac is True, the value of aaa can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aae or aaf) -> aag.\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(aah or aai) -> aaj.\n(aag or aaj) -> aak.\n(aad or aak) -> aan.\nGiven aan is False, what is the value of aaa?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(NOT aac) -> aad = False.\nGiven aad is False, the value of premise (NOT aac) is False, thus, the value of aac is abduced as True.\n(NOT aab) -> aac = True.\nGiven aac is True, the value of aab can not be abduced and is set to be N/A.\n(NOT aaa) -> aab = N/A.\nGiven aab is N/A, the value of aaa can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(NOT aaa) -> aab.\n(NOT aab) -> aac.\n(NOT aac) -> aad.\nGiven aad is False, what is the value of aaa?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aae OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aae OR aai) is False, thus, the value of aae is abduced as False.\n(aab OR aad) -> aae = False.\nGiven aae is False, the value of premise (aab OR aad) is False, thus, the value of aab is abduced as False.\n(NOT aaa) -> aab = False.\nGiven aab is False, the value of premise (NOT aaa) is False, thus, the value of aaa is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aaf or aag) -> aah.\n(NOT aah) -> aai.\n(NOT aac) -> aad.\n(NOT aaa) -> aab.\n(aab or aad) -> aae.\n(aae or aai) -> aaj.\nGiven aaj is False, what is the value of aaa?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(NOT aag) -> aah = False.\nGiven aah is False, the value of premise (NOT aag) is False, thus, the value of aag is abduced as True.\n(aac OR aaf) -> aag = True.\nGiven aag is True, the value of aaf can not be abduced and is set to be N/A.\n(aad OR aae) -> aaf = N/A.\nGiven aaf is N/A, the value of aae can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\n(NOT aag) -> aah.\nGiven aah is False, what is the value of aae?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aad OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aad OR aaj) is False, thus, the value of aaj is abduced as False.\n(aag OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aag OR aai) is False, thus, the value of aai is abduced as False.\n(NOT aah) -> aai = False.\nGiven aai is False, the value of premise (NOT aah) is False, thus, the value of aah is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(NOT aah) -> aai.\n(aae or aaf) -> aag.\n(aag or aai) -> aaj.\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(aad or aaj) -> aak.\nGiven aak is False, what is the value of aah?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(NOT aag) -> aah = False.\nGiven aah is False, the value of premise (NOT aag) is False, thus, the value of aag is abduced as True.\n(aac OR aaf) -> aag = True.\nGiven aag is True, the value of aac can not be abduced and is set to be N/A.\n(aaa OR aab) -> aac = N/A.\nGiven aac is N/A, the value of aab can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\n(NOT aag) -> aah.\nGiven aah is False, what is the value of aab?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aaf OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aaf OR aaj) is False, thus, the value of aaf is abduced as False.\n(aac OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aac OR aae) is False, thus, the value of aac is abduced as False.\n(aaa OR aab) -> aac = False.\nGiven aac is False, the value of premise (aaa OR aab) is False, thus, the value of aab is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(NOT aad) -> aae.\n(aaa or aab) -> aac.\n(aac or aae) -> aaf.\n(aag or aah) -> aai.\n(NOT aai) -> aaj.\n(aaf or aaj) -> aak.\nGiven aak is False, what is the value of aab?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aad OR aah) -> aai = False.\nGiven aai is False, the value of premise (aad OR aah) is False, thus, the value of aah is abduced as False.\n(NOT aag) -> aah = False.\nGiven aah is False, the value of premise (NOT aag) is False, thus, the value of aag is abduced as True.\n(aae OR aaf) -> aag = True.\nGiven aag is True, the value of aae can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(aae or aaf) -> aag.\n(NOT aag) -> aah.\n(aad or aah) -> aai.\nGiven aai is False, what is the value of aae?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aag OR aap) -> aaq = False.\nGiven aaq is False, the value of premise (aag OR aap) is False, thus, the value of aag is abduced as False.\n(aac OR aaf) -> aag = False.\nGiven aag is False, the value of premise (aac OR aaf) is False, thus, the value of aaf is abduced as False.\n(aad OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aad OR aae) is False, thus, the value of aad is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aah or aai) -> aaj.\n(aak and aan) -> aao.\n(aaj or aao) -> aap.\n(aad or aae) -> aaf.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\n(aag or aap) -> aaq.\nGiven aaq is False, what is the value of aad?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aad OR aak) -> aan = False.\nGiven aan is False, the value of premise (aad OR aak) is False, thus, the value of aad is abduced as False.\n(NOT aac) -> aad = False.\nGiven aad is False, the value of premise (NOT aac) is False, thus, the value of aac is abduced as True.\n(aaa OR aab) -> aac = True.\nGiven aac is True, the value of aaa can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(aae or aaf) -> aag.\n(aah or aai) -> aaj.\n(aag or aaj) -> aak.\n(aad or aak) -> aan.\nGiven aan is False, what is the value of aaa?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aad OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aad OR aaj) is False, thus, the value of aaj is abduced as False.\n(aaf OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aaf OR aai) is False, thus, the value of aai is abduced as False.\n(aag OR aah) -> aai = False.\nGiven aai is False, the value of premise (aag OR aah) is False, thus, the value of aah is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aag or aah) -> aai.\n(NOT aae) -> aaf.\n(aaf or aai) -> aaj.\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\n(aad or aaj) -> aak.\nGiven aak is False, what is the value of aah?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aaf OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aaf OR aaj) is False, thus, the value of aaf is abduced as False.\n(aab OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aab OR aae) is False, thus, the value of aab is abduced as False.\n(NOT aaa) -> aab = False.\nGiven aab is False, the value of premise (NOT aaa) is False, thus, the value of aaa is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aac or aad) -> aae.\n(NOT aaa) -> aab.\n(aab or aae) -> aaf.\n(aag or aah) -> aai.\n(NOT aai) -> aaj.\n(aaf or aaj) -> aak.\nGiven aak is False, what is the value of aaa?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aaf OR aan) -> aao = False.\nGiven aao is False, the value of premise (aaf OR aan) is False, thus, the value of aaf is abduced as False.\n(aac OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aac OR aae) is False, thus, the value of aac is abduced as False.\n(aaa OR aab) -> aac = False.\nGiven aac is False, the value of premise (aaa OR aab) is False, thus, the value of aaa is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(NOT aad) -> aae.\n(aaa or aab) -> aac.\n(aac or aae) -> aaf.\n(aag or aah) -> aai.\n(NOT aaj) -> aak.\n(aai or aak) -> aan.\n(aaf or aan) -> aao.\nGiven aao is False, what is the value of aaa?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aac OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aac OR aai) is False, thus, the value of aai is abduced as False.\n(aae OR aah) -> aai = False.\nGiven aai is False, the value of premise (aae OR aah) is False, thus, the value of aah is abduced as False.\n(aaf OR aag) -> aah = False.\nGiven aah is False, the value of premise (aaf OR aag) is False, thus, the value of aaf is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(NOT aaa) -> aab.\n(NOT aab) -> aac.\n(NOT aad) -> aae.\n(aaf or aag) -> aah.\n(aae or aah) -> aai.\n(aac or aai) -> aaj.\nGiven aaj is False, what is the value of aaf?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aag OR aao) -> aap = False.\nGiven aap is False, the value of premise (aag OR aao) is False, thus, the value of aao is abduced as False.\n(aai OR aan) -> aao = False.\nGiven aao is False, the value of premise (aai OR aan) is False, thus, the value of aai is abduced as False.\n(NOT aah) -> aai = False.\nGiven aai is False, the value of premise (NOT aah) is False, thus, the value of aah is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aaa or aab) -> aac.\n(NOT aah) -> aai.\n(aaj or aak) -> aan.\n(aai or aan) -> aao.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\n(aag or aao) -> aap.\nGiven aap is False, what is the value of aah?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aaf OR aao) -> aap = False.\nGiven aap is False, the value of premise (aaf OR aao) is False, thus, the value of aaf is abduced as False.\n(aac OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aac OR aae) is False, thus, the value of aae is abduced as False.\n(NOT aad) -> aae = False.\nGiven aae is False, the value of premise (NOT aad) is False, thus, the value of aad is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aaj or aak) -> aan.\n(aag or aah) -> aai.\n(aai or aan) -> aao.\n(NOT aad) -> aae.\n(aaa and aab) -> aac.\n(aac or aae) -> aaf.\n(aaf or aao) -> aap.\nGiven aap is False, what is the value of aad?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aaf OR aan) -> aao = False.\nGiven aao is False, the value of premise (aaf OR aan) is False, thus, the value of aan is abduced as False.\n(aai OR aak) -> aan = False.\nGiven aan is False, the value of premise (aai OR aak) is False, thus, the value of aai is abduced as False.\n(aag OR aah) -> aai = False.\nGiven aai is False, the value of premise (aag OR aah) is False, thus, the value of aag is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(NOT aaj) -> aak.\n(aag or aah) -> aai.\n(aai or aak) -> aan.\n(NOT aad) -> aae.\n(aaa or aab) -> aac.\n(aac or aae) -> aaf.\n(aaf or aan) -> aao.\nGiven aao is False, what is the value of aag?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aad OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aad OR aaj) is False, thus, the value of aaj is abduced as False.\n(aag OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aag OR aai) is False, thus, the value of aai is abduced as False.\n(NOT aah) -> aai = False.\nGiven aai is False, the value of premise (NOT aah) is False, thus, the value of aah is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aae or aaf) -> aag.\n(NOT aah) -> aai.\n(aag or aai) -> aaj.\n(aaa and aab) -> aac.\n(NOT aac) -> aad.\n(aad or aaj) -> aak.\nGiven aak is False, what is the value of aah?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aag OR aap) -> aaq = False.\nGiven aaq is False, the value of premise (aag OR aap) is False, thus, the value of aap is abduced as False.\n(aaj OR aao) -> aap = False.\nGiven aap is False, the value of premise (aaj OR aao) is False, thus, the value of aaj is abduced as False.\n(aah OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aah OR aai) is False, thus, the value of aah is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aak or aan) -> aao.\n(aah or aai) -> aaj.\n(aaj or aao) -> aap.\n(aad or aae) -> aaf.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\n(aag or aap) -> aaq.\nGiven aaq is False, what is the value of aah?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aaf OR aan) -> aao = False.\nGiven aao is False, the value of premise (aaf OR aan) is False, thus, the value of aan is abduced as False.\n(aah OR aak) -> aan = False.\nGiven aan is False, the value of premise (aah OR aak) is False, thus, the value of aah is abduced as False.\n(NOT aag) -> aah = False.\nGiven aah is False, the value of premise (NOT aag) is False, thus, the value of aag is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(NOT aag) -> aah.\n(aai or aaj) -> aak.\n(aah or aak) -> aan.\n(NOT aaa) -> aab.\n(aac or aad) -> aae.\n(aab or aae) -> aaf.\n(aaf or aan) -> aao.\nGiven aao is False, what is the value of aag?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aaf OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aaf OR aaj) is False, thus, the value of aaf is abduced as False.\n(aab AND aae) -> aaf = False.\nGiven aaf is False, the value of premise (aab AND aae) is False, however, because the operation is 'AND', the value of aab can not be abduced and is set to N/A.\n(NOT aaa) -> aab = N/A.\nGiven aab is N/A, the value of aaa can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aag or aah) -> aai.\n(NOT aai) -> aaj.\n(NOT aaa) -> aab.\n(aac or aad) -> aae.\n(aab and aae) -> aaf.\n(aaf or aaj) -> aak.\nGiven aak is False, what is the value of aaa?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aaf OR aan) -> aao = False.\nGiven aao is False, the value of premise (aaf OR aan) is False, thus, the value of aaf is abduced as False.\n(aab OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aab OR aae) is False, thus, the value of aae is abduced as False.\n(aac OR aad) -> aae = False.\nGiven aae is False, the value of premise (aac OR aad) is False, thus, the value of aad is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aac or aad) -> aae.\n(aai or aaj) -> aak.\n(NOT aag) -> aah.\n(aah or aak) -> aan.\n(NOT aaa) -> aab.\n(aab or aae) -> aaf.\n(aaf or aan) -> aao.\nGiven aao is False, what is the value of aad?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aaf AND aaj) -> aak = False.\nGiven aak is False, the value of premise (aaf AND aaj) is False, however, because the operation is 'AND', the value of aaj can not be abduced and is set to N/A.\n(NOT aai) -> aaj = N/A.\nGiven aaj is N/A, the value of aai can not be abduced and is set to be N/A.\n(aag OR aah) -> aai = N/A.\nGiven aai is N/A, the value of aag can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aag or aah) -> aai.\n(NOT aai) -> aaj.\n(NOT aaa) -> aab.\n(aac or aad) -> aae.\n(aab or aae) -> aaf.\n(aaf and aaj) -> aak.\nGiven aak is False, what is the value of aag?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aae OR aak) -> aan = False.\nGiven aan is False, the value of premise (aae OR aak) is False, thus, the value of aak is abduced as False.\n(aah OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aah OR aaj) is False, thus, the value of aaj is abduced as False.\n(NOT aai) -> aaj = False.\nGiven aaj is False, the value of premise (NOT aai) is False, thus, the value of aai is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aaf or aag) -> aah.\n(NOT aai) -> aaj.\n(aah or aaj) -> aak.\n(NOT aac) -> aad.\n(NOT aaa) -> aab.\n(aab or aad) -> aae.\n(aae or aak) -> aan.\nGiven aan is False, what is the value of aai?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aaf OR aan) -> aao = False.\nGiven aao is False, the value of premise (aaf OR aan) is False, thus, the value of aaf is abduced as False.\n(aac OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aac OR aae) is False, thus, the value of aae is abduced as False.\n(NOT aad) -> aae = False.\nGiven aae is False, the value of premise (NOT aad) is False, thus, the value of aad is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(NOT aad) -> aae.\n(aaa or aab) -> aac.\n(aac or aae) -> aaf.\n(aag or aah) -> aai.\n(NOT aaj) -> aak.\n(aai or aak) -> aan.\n(aaf or aan) -> aao.\nGiven aao is False, what is the value of aad?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aag OR aao) -> aap = False.\nGiven aap is False, the value of premise (aag OR aao) is False, thus, the value of aao is abduced as False.\n(aai OR aan) -> aao = False.\nGiven aao is False, the value of premise (aai OR aan) is False, thus, the value of aai is abduced as False.\n(NOT aah) -> aai = False.\nGiven aai is False, the value of premise (NOT aah) is False, thus, the value of aah is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aad or aae) -> aaf.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\n(aaj or aak) -> aan.\n(NOT aah) -> aai.\n(aai or aan) -> aao.\n(aag or aao) -> aap.\nGiven aap is False, what is the value of aah?"
+    },
+    {
+        "answers": true,
+        "inferences": "(aaf OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aaf OR aaj) is False, thus, the value of aaf is abduced as False.\n(aab OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aab OR aae) is False, thus, the value of aab is abduced as False.\n(NOT aaa) -> aab = False.\nGiven aab is False, the value of premise (NOT aaa) is False, thus, the value of aaa is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "\n(aag or aah) -> aai.\n(NOT aai) -> aaj.\n(aac and aad) -> aae.\n(NOT aaa) -> aab.\n(aab or aae) -> aaf.\n(aaf or aaj) -> aak.\nGiven aak is False, what is the value of aaa?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aaf OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aaf OR aaj) is False, thus, the value of aaf is abduced as False.\n(aab OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aab OR aae) is False, thus, the value of aae is abduced as False.\n(aac OR aad) -> aae = False.\nGiven aae is False, the value of premise (aac OR aad) is False, thus, the value of aac is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aac or aad) -> aae.\n(NOT aaa) -> aab.\n(aag or aah) -> aai.\n(NOT aai) -> aaj.\n(aab or aae) -> aaf.\n(aaf or aaj) -> aak.\nGiven aak is False, what is the value of aac?"
+    },
+    {
+        "answers": false,
+        "inferences": "(aaf OR aan) -> aao = False.\nGiven aao is False, the value of premise (aaf OR aan) is False, thus, the value of aaf is abduced as False.\n(aab OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aab OR aae) is False, thus, the value of aae is abduced as False.\n(aac OR aad) -> aae = False.\nGiven aae is False, the value of premise (aac OR aad) is False, thus, the value of aac is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "descriptions": "\n(aai and aaj) -> aak.\n(NOT aag) -> aah.\n(aah or aak) -> aan.\n(NOT aaa) -> aab.\n(aac or aad) -> aae.\n(aab or aae) -> aaf.\n(aaf or aan) -> aao.\nGiven aao is False, what is the value of aac?"
+    },
+    {
+        "answers": "N/A",
+        "inferences": "(aag OR aap) -> aaq = False.\nGiven aaq is False, the value of premise (aag OR aap) is False, thus, the value of aag is abduced as False.\n(aac OR aaf) -> aag = False.\nGiven aag is False, the value of premise (aac OR aaf) is False, thus, the value of aac is abduced as False.\n(aaa AND aab) -> aac = False.\nGiven aac is False, the value of premise (aaa AND aab) is False, however, because the operation is 'AND', the value of aab can not be abduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "\n(aaa and aab) -> aac.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\n(aak or aan) -> aao.\n(aah and aai) -> aaj.\n(aaj or aao) -> aap.\n(aag or aap) -> aaq.\nGiven aaq is False, what is the value of aab?"
+    },
+    {
+        "descriptions": "\n(NOT aah) -> aai.\n(NOT aaj) -> aak.\n(aai or aak) -> aan.\n(aad or aae) -> aaf.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\n(aag or aan) -> aao.\nGiven aao is True, what is the value of aaj?",
+        "inferences": "(NOT aag OR aan) -> aao = True.\nGiven aao is True, the value of premise (aag OR aan) is True, thus, the value of aan is abduced as True.\n(aai OR aak) -> aan = True.\nGiven aan is True, the value of premise (aai OR aak) is True, thus, the value of aai and aak can not be abduced and are set to be N/A.\n(NOT aaj) -> aak = N/A.\nGiven aak is N/A, the value of aaj can not be abduced and is set to be N/A.\n\nThus, the answer is <<<N/A>>>",
+        "answers": "N/A"
+    },
+    {
+        "descriptions": "\n(aad or aae) -> aaf.\n(aak or aan) -> aao.\n(aaa or aab) -> aac.\n(aac and aaf) -> aag.\n(aah or aai) -> aaj.\n(aaj or aao) -> aap.\n(aag and aap) -> aaq.\nGiven aaq is False, what is the value of aah?",
+        "inferences": "<<<Answer>>>\n\n(aag AND aap) -> aaq = False.\nGiven aaq is False, the value of premise (aag AND aap) is False, thus, either the value of aag or aap is abduced as False.\n(aaj OR aao) -> aap = False.\nGiven aap is False, the value of premise (aaj OR aao) is False, thus, the value of aaj and aao are both abduced as False.\n(aah OR aai) -> aaj = False.\nGiven aaj is False, the value of premise (aah OR aai) is False, thus, the value of aah and aai are both abduced as False.\n\nThus, the answer is <<<False>>>",
+        "answers": "N/A"
+    },
+    {
+        "descriptions": "\n(aak or aan) -> aao.\n(aah or aai) -> aaj.\n(aad or aae) -> aaf.\n(aaa or aab) -> aac.\n(aaj or aao) -> aap.\n(aac or aaf) -> aag.\n(aag or aap) -> aaq.\nGiven aaq is False, what is the value of aan?",
+        "inferences": "<<<Answer>>>\n\n(aag OR aap) -> aaq = False.\nGiven aaq is False, the value of premise (aag OR aap) is False, thus, the value of aap is abduced as False.\n(aaj OR aao) -> aap = False.\nGiven aap is False, the value of premise (aaj OR aao) is False, thus, the value of aao is abduced as False.\n(aak OR aan) -> aao = False.\nGiven aao is False, the value of premise (aak OR aan) is False, thus, the value of aan is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "answers": false
+    },
+    {
+        "descriptions": "\n(NOT aaa) -> aab.\n(aaf or aag) -> aah.\n(NOT aai) -> aaj.\n(aah or aaj) -> aak.\n(NOT aac) -> aad.\n(aab or aad) -> aae.\n(aae or aak) -> aan.\nGiven aan is False, what is the value of aai?",
+        "inferences": "<<<Answer>>>\n\n(aae OR aak) -> aan = False.\nGiven aan is False, the value of premise (aae OR aak) is False, thus, the value of aae is abduced as False and the value of aak is abduced as False.\n(aab OR aad) -> aae = False.\nGiven aae is False, the value of premise (aab OR aad) is False, thus, the value of aab is abduced as False and the value of aad is abduced as False.\n(NOT aac) -> aad = False.\nGiven aad is False, the value of premise (NOT aac) is False, thus, the value of aac is abduced as True.\n(aah OR aaj) -> aak = False.\nGiven aak is False, the value of premise (aah OR aaj) is False, thus, the value of aah is abduced as False and the value of aaj is abduced as False.\n(aaf OR aag) -> aah = False.\nGiven aah is False, the value of premise (aaf OR aag) is False, thus, the value of aaf is abduced as False and the value of aag is abduced as False.\n(NOT aai) -> aaj = False.\nGiven aaj is False, the value of premise (NOT aai) is False, thus, the value of aai is abduced as True.\n\nThus, the answer is <<<True>>>",
+        "answers": true
+    },
+    {
+        "descriptions": "\n(aah or aai) -> aaj.\n(aaa and aab) -> aac.\n(aak or aan) -> aao.\n(aaj or aao) -> aap.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\n(aag or aap) -> aaq.\nGiven aaq is False, what is the value of aan?",
+        "inferences": "<<<Answer>>>\n\n(aag OR aap) -> aaq = False.\nGiven aaq is False, the value of premise (aag OR aap) is False, thus, the value of aag is abduced as False and the value of aap is abduced as False.\n(aac OR aaf) -> aag = False.\nGiven aag is False, the value of premise (aac OR aaf) is False, thus, the value of aaf is abduced as False.\n(aad OR aae) -> aaf = False.\nGiven aaf is False, the value of premise (aad OR aae) is False, thus, the value of aae is abduced as False.\n(aaj OR aao) -> aap = False.\nGiven aap is False, the value of premise (aaj OR aao) is False, thus, the value of aao is abduced as False.\n(aak OR aan) -> aao = False.\nGiven aao is False, the value of premise (aak OR aan) is False, thus, the value of aan is abduced as False.\n\nThus, the answer is <<<False>>>",
+        "answers": false
+    }
+]

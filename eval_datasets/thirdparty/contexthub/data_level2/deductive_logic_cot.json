@@ -1,0 +1,240 @@
+[
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is True.\naad is False.\n(aad OR aae) = (False OR True) -> aaf.\nThe premise (False OR True) is True, thus, the value of aaf is True.\naab is False.\naaa is True.\n(aaa OR aab) = (True OR False) -> aac.\nThe premise (True OR False) is True, thus, the value of aac is True.\n(aac OR aaf) = (True OR True) -> aag.\nThe premise (True OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is True.\naad is False.\n(aad or aae) -> aaf.\naab is False.\naaa is True.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aad",
+        "inferences": "aab is False.\naaa is True.\n(aaa OR aab) = (True OR False) -> aac.\nThe premise (True OR False) is True, thus, the value of aac is True.\n(NOT aac) = (NOT True) -> aad.\nThe value of the premise (NOT True) is False. Thus, the value of aad cannot be deduced, and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aab is False.\naaa is True.\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\nDeduce the result of aad."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is True.\naad is False.\n(aad OR aae) = (False OR True) -> aaf.\nThe premise (False OR True) is True, thus, the value of aaf is True.\naaa is False.\naab is True.\n(aaa OR aab) = (False OR True) -> aac.\nThe premise (False OR True) is True, thus, the value of aac is True.\n(aac OR aaf) = (True OR True) -> aag.\nThe premise (True OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is True.\naad is False.\n(aad or aae) -> aaf.\naaa is False.\naab is True.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aad",
+        "inferences": "aab is True.\naaa is True.\n(aaa OR aab) = (True OR True) -> aac.\nThe premise (True OR True) is True, thus, the value of aac is True.\n(NOT aac) = (NOT True) -> aad.\nThe value of the premise (NOT True) is False. Thus, the value of aad cannot be deduced, and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aab is True.\naaa is True.\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\nDeduce the result of aad."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aad",
+        "inferences": "aab is False.\naaa is False.\n(aaa OR aab) = (False OR False) -> aac.\nThe premise (False OR False) is False, thus, the value of aac cannot be deduced and is set to N/A.\n(NOT aac) = (NOT N/A) -> aad.\nThe value of aad cannot be deduced, and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aab is False.\naaa is False.\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\nDeduce the result of aad."
+    },
+    {
+        "answers": true,
+        "vars": "aaf",
+        "inferences": "aad is True.\n(NOT aad) = (NOT True) -> aae.\nThe value of the premise (NOT True) is False. Thus, the value of aae cannot be deduced, and is set to N/A.\naab is True.\naaa is False.\n(aaa OR aab) = (False OR True) -> aac.\nThe premise (False OR True) is True, thus, the value of aac is True.\n(aac OR aae) = (True OR N/A) -> aaf.\nThe premise (True OR N/A) is True, thus, the value of aaf is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aad is True.\n(NOT aad) -> aae.\naab is True.\naaa is False.\n(aaa or aab) -> aac.\n(aac or aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aac",
+        "inferences": "aaa is True.\n(NOT aaa) = (NOT True) -> aab.\nThe value of the premise (NOT True) is False. Thus, the value of aab cannot be deduced, and is set to N/A.\n(NOT aab) = (NOT N/A) -> aac.\nThe value of aac cannot be deduced, and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aaa is True.\n(NOT aaa) -> aab.\n(NOT aab) -> aac.\nDeduce the result of aac."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aad",
+        "inferences": "aaa is False.\naab is False.\n(aaa OR aab) = (False OR False) -> aac.\nThe premise (False OR False) is False, thus, the value of aac cannot be deduced and is set to N/A.\n(NOT aac) = (NOT N/A) -> aad.\nThe value of aad cannot be deduced, and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aaa is False.\naab is False.\n(aaa or aab) -> aac.\n(NOT aac) -> aad.\nDeduce the result of aad."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is False.\naad is False.\n(aad AND aae) = (False AND False) -> aaf.\nThe premise (False AND False) is False, thus, the value of aaf can not be deduced and is set to N/A.\naaa is True.\naab is True.\n(aaa OR aab) = (True OR True) -> aac.\nThe premise (True OR True) is True, thus, the value of aac is True.\n(aac OR aaf) = (True OR N/A) -> aag.\nThe premise (True OR N/A) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is False.\naad is False.\n(aad and aae) -> aaf.\naaa is True.\naab is True.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aad",
+        "inferences": "aaa is False.\naab is False.\n(aaa AND aab) = (False AND False) -> aac.\nThe premise (False AND False) is False, thus, the value of aac can not be deduced and is set to N/A.\n(NOT aac) = (NOT N/A) -> aad.\nThe value of aad cannot be deduced, and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aaa is False.\naab is False.\n(aaa and aab) -> aac.\n(NOT aac) -> aad.\nDeduce the result of aad."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aaf",
+        "inferences": "aaa is True.\n(NOT aaa) = (NOT True) -> aab.\nThe value of the premise (NOT True) is False. Thus, the value of aab cannot be deduced, and is set to N/A.\naac is False.\naad is False.\n(aac OR aad) = (False OR False) -> aae.\nThe premise (False OR False) is False, thus, the value of aae cannot be deduced and is set to N/A.\n(aab AND aae) = (N/A AND N/A) -> aaf.\nGiven at least one of the children's value is N/A, the value of aaf cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aaa is True.\n(NOT aaa) -> aab.\naac is False.\naad is False.\n(aac or aad) -> aae.\n(aab and aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": true,
+        "vars": "aaf",
+        "inferences": "aaa is False.\n(NOT aaa) = (NOT False) -> aab.\nThe premise (NOT False) is True, thus, the value of aab is True.\naad is False.\naac is True.\n(aac OR aad) = (True OR False) -> aae.\nThe premise (True OR False) is True, thus, the value of aae is True.\n(aab OR aae) = (True OR True) -> aaf.\nThe premise (True OR True) is True, thus, the value of aaf is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aaa is False.\n(NOT aaa) -> aab.\naad is False.\naac is True.\n(aac or aad) -> aae.\n(aab or aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aad is False.\naab is False.\naaa is False.\n(aaa OR aab) = (False OR False) -> aac.\nThe premise (False OR False) is False, thus, the value of aac cannot be deduced and is set to N/A.\naae is False.\n(aad OR aae) = (False OR False) -> aaf.\nThe premise (False OR False) is False, thus, the value of aaf cannot be deduced and is set to N/A.\n(aac OR aaf) = (N/A OR N/A) -> aag.\nGiven none of the children are True and at least one is N/A, thus, the value of premise is N/A. Thus, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aad is False.\naab is False.\naaa is False.\n(aaa or aab) -> aac.\naae is False.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aaf",
+        "inferences": "aaa is True.\naab is False.\n(aaa OR aab) = (True OR False) -> aac.\nThe premise (True OR False) is True, thus, the value of aac is True.\naad is False.\n(NOT aad) = (NOT False) -> aae.\nThe premise (NOT False) is True, thus, the value of aae is True.\n(aac OR aae) = (True OR True) -> aaf.\nThe premise (True OR True) is True, thus, the value of aaf is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aaa is True.\naab is False.\n(aaa or aab) -> aac.\naad is False.\n(NOT aad) -> aae.\n(aac or aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aab is True.\naaa is False.\n(aaa OR aab) = (False OR True) -> aac.\nThe premise (False OR True) is True, thus, the value of aac is True.\naae is True.\naad is False.\n(aad OR aae) = (False OR True) -> aaf.\nThe premise (False OR True) is True, thus, the value of aaf is True.\n(aac OR aaf) = (True OR True) -> aag.\nThe premise (True OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aab is True.\naaa is False.\n(aaa or aab) -> aac.\naae is True.\naad is False.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aab is True.\naaa is True.\n(aaa OR aab) = (True OR True) -> aac.\nThe premise (True OR True) is True, thus, the value of aac is True.\naad is True.\naae is True.\n(aad OR aae) = (True OR True) -> aaf.\nThe premise (True OR True) is True, thus, the value of aaf is True.\n(aac AND aaf) = (True AND True) -> aag.\nThe premise (True AND True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aab is True.\naaa is True.\n(aaa or aab) -> aac.\naad is True.\naae is True.\n(aad or aae) -> aaf.\n(aac and aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is True.\naad is True.\n(aad OR aae) = (True OR True) -> aaf.\nThe premise (True OR True) is True, thus, the value of aaf is True.\naaa is False.\naab is False.\n(aaa OR aab) = (False OR False) -> aac.\nThe premise (False OR False) is False, thus, the value of aac cannot be deduced and is set to N/A.\n(aac OR aaf) = (N/A OR True) -> aag.\nThe premise (N/A OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is True.\naad is True.\n(aad or aae) -> aaf.\naaa is False.\naab is False.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is False.\naad is True.\n(aad OR aae) = (True OR False) -> aaf.\nThe premise (True OR False) is True, thus, the value of aaf is True.\naab is False.\naaa is True.\n(aaa OR aab) = (True OR False) -> aac.\nThe premise (True OR False) is True, thus, the value of aac is True.\n(aac OR aaf) = (True OR True) -> aag.\nThe premise (True OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is False.\naad is True.\n(aad or aae) -> aaf.\naab is False.\naaa is True.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is True.\naaa is True.\naab is True.\n(aaa OR aab) = (True OR True) -> aac.\nThe premise (True OR True) is True, thus, the value of aac is True.\naad is True.\n(aad AND aae) = (True AND True) -> aaf.\nThe premise (True AND True) is True, thus, the value of aaf is True.\n(aac OR aaf) = (True OR True) -> aag.\nThe premise (True OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is True.\naaa is True.\naab is True.\n(aaa or aab) -> aac.\naad is True.\n(aad and aae) -> aaf.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aaf",
+        "inferences": "aab is False.\naaa is False.\n(aaa OR aab) = (False OR False) -> aac.\nThe premise (False OR False) is False, thus, the value of aac cannot be deduced and is set to N/A.\naad is True.\n(NOT aad) = (NOT True) -> aae.\nThe value of the premise (NOT True) is False. Thus, the value of aae cannot be deduced, and is set to N/A.\n(aac AND aae) = (N/A AND N/A) -> aaf.\nGiven at least one of the children's value is N/A, the value of aaf cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aab is False.\naaa is False.\n(aaa or aab) -> aac.\naad is True.\n(NOT aad) -> aae.\n(aac and aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aad is True.\naae is False.\n(aad OR aae) = (True OR False) -> aaf.\nThe premise (True OR False) is True, thus, the value of aaf is True.\naaa is True.\naab is False.\n(aaa OR aab) = (True OR False) -> aac.\nThe premise (True OR False) is True, thus, the value of aac is True.\n(aac OR aaf) = (True OR True) -> aag.\nThe premise (True OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aad is True.\naae is False.\n(aad or aae) -> aaf.\naaa is True.\naab is False.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is True.\naad is False.\n(aad OR aae) = (False OR True) -> aaf.\nThe premise (False OR True) is True, thus, the value of aaf is True.\naaa is True.\naab is True.\n(aaa OR aab) = (True OR True) -> aac.\nThe premise (True OR True) is True, thus, the value of aac is True.\n(aac AND aaf) = (True AND True) -> aag.\nThe premise (True AND True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is True.\naad is False.\n(aad or aae) -> aaf.\naaa is True.\naab is True.\n(aaa or aab) -> aac.\n(aac and aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aaa is True.\naab is False.\n(aaa OR aab) = (True OR False) -> aac.\nThe premise (True OR False) is True, thus, the value of aac is True.\naae is True.\naad is False.\n(aad AND aae) = (False AND True) -> aaf.\nThe premise (False AND True) is False, thus, the value of aaf can not be deduced and is set to N/A.\n(aac AND aaf) = (True AND N/A) -> aag.\nGiven at least one of the children's value is N/A, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aaa is True.\naab is False.\n(aaa or aab) -> aac.\naae is True.\naad is False.\n(aad and aae) -> aaf.\n(aac and aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aaf",
+        "inferences": "aab is False.\naad is True.\n(NOT aad) = (NOT True) -> aae.\nThe value of the premise (NOT True) is False. Thus, the value of aae cannot be deduced, and is set to N/A.\naaa is True.\n(aaa OR aab) = (True OR False) -> aac.\nThe premise (True OR False) is True, thus, the value of aac is True.\n(aac OR aae) = (True OR N/A) -> aaf.\nThe premise (True OR N/A) is True, thus, the value of aaf is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aab is False.\naad is True.\n(NOT aad) -> aae.\naaa is True.\n(aaa or aab) -> aac.\n(aac or aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aaa is False.\naad is True.\naae is False.\n(aad OR aae) = (True OR False) -> aaf.\nThe premise (True OR False) is True, thus, the value of aaf is True.\naab is False.\n(aaa OR aab) = (False OR False) -> aac.\nThe premise (False OR False) is False, thus, the value of aac cannot be deduced and is set to N/A.\n(aac OR aaf) = (N/A OR True) -> aag.\nThe premise (N/A OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aaa is False.\naad is True.\naae is False.\n(aad or aae) -> aaf.\naab is False.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aab is False.\naaa is True.\n(aaa AND aab) = (True AND False) -> aac.\nThe premise (True AND False) is False, thus, the value of aac can not be deduced and is set to N/A.\naae is False.\naad is False.\n(aad OR aae) = (False OR False) -> aaf.\nThe premise (False OR False) is False, thus, the value of aaf cannot be deduced and is set to N/A.\n(aac OR aaf) = (N/A OR N/A) -> aag.\nGiven none of the children are True and at least one is N/A, thus, the value of premise is N/A. Thus, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aab is False.\naaa is True.\n(aaa and aab) -> aac.\naae is False.\naad is False.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aae is True.\naad is False.\n(aad AND aae) = (False AND True) -> aaf.\nThe premise (False AND True) is False, thus, the value of aaf can not be deduced and is set to N/A.\naaa is True.\naab is True.\n(aaa AND aab) = (True AND True) -> aac.\nThe premise (True AND True) is True, thus, the value of aac is True.\n(aac OR aaf) = (True OR N/A) -> aag.\nThe premise (True OR N/A) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aae is True.\naad is False.\n(aad and aae) -> aaf.\naaa is True.\naab is True.\n(aaa and aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aae is True.\naad is False.\n(aad AND aae) = (False AND True) -> aaf.\nThe premise (False AND True) is False, thus, the value of aaf can not be deduced and is set to N/A.\naab is True.\naaa is False.\n(aaa OR aab) = (False OR True) -> aac.\nThe premise (False OR True) is True, thus, the value of aac is True.\n(aac AND aaf) = (True AND N/A) -> aag.\nGiven at least one of the children's value is N/A, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aae is True.\naad is False.\n(aad and aae) -> aaf.\naab is True.\naaa is False.\n(aaa or aab) -> aac.\n(aac and aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aab is False.\naaa is True.\n(aaa AND aab) = (True AND False) -> aac.\nThe premise (True AND False) is False, thus, the value of aac can not be deduced and is set to N/A.\naad is True.\naae is True.\n(aad OR aae) = (True OR True) -> aaf.\nThe premise (True OR True) is True, thus, the value of aaf is True.\n(aac OR aaf) = (N/A OR True) -> aag.\nThe premise (N/A OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aab is False.\naaa is True.\n(aaa and aab) -> aac.\naad is True.\naae is True.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aaf",
+        "inferences": "aad is True.\n(NOT aad) = (NOT True) -> aae.\nThe value of the premise (NOT True) is False. Thus, the value of aae cannot be deduced, and is set to N/A.\naab is True.\naaa is True.\n(aaa OR aab) = (True OR True) -> aac.\nThe premise (True OR True) is True, thus, the value of aac is True.\n(aac AND aae) = (True AND N/A) -> aaf.\nGiven at least one of the children's value is N/A, the value of aaf cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aad is True.\n(NOT aad) -> aae.\naab is True.\naaa is True.\n(aaa or aab) -> aac.\n(aac and aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aaa is False.\naae is False.\naad is True.\n(aad OR aae) = (True OR False) -> aaf.\nThe premise (True OR False) is True, thus, the value of aaf is True.\naab is True.\n(aaa AND aab) = (False AND True) -> aac.\nThe premise (False AND True) is False, thus, the value of aac can not be deduced and is set to N/A.\n(aac AND aaf) = (N/A AND True) -> aag.\nGiven at least one of the children's value is N/A, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aaa is False.\naae is False.\naad is True.\n(aad or aae) -> aaf.\naab is True.\n(aaa and aab) -> aac.\n(aac and aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aaf",
+        "inferences": "aac is True.\naaa is True.\n(NOT aaa) = (NOT True) -> aab.\nThe value of the premise (NOT True) is False. Thus, the value of aab cannot be deduced, and is set to N/A.\naad is True.\n(aac OR aad) = (True OR True) -> aae.\nThe premise (True OR True) is True, thus, the value of aae is True.\n(aab AND aae) = (N/A AND True) -> aaf.\nGiven at least one of the children's value is N/A, the value of aaf cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aac is True.\naaa is True.\n(NOT aaa) -> aab.\naad is True.\n(aac or aad) -> aae.\n(aab and aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aab is False.\naae is False.\naad is True.\n(aad AND aae) = (True AND False) -> aaf.\nThe premise (True AND False) is False, thus, the value of aaf can not be deduced and is set to N/A.\naaa is False.\n(aaa OR aab) = (False OR False) -> aac.\nThe premise (False OR False) is False, thus, the value of aac cannot be deduced and is set to N/A.\n(aac OR aaf) = (N/A OR N/A) -> aag.\nGiven none of the children are True and at least one is N/A, thus, the value of premise is N/A. Thus, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aab is False.\naae is False.\naad is True.\n(aad and aae) -> aaf.\naaa is False.\n(aaa or aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aad is True.\naae is False.\n(aad AND aae) = (True AND False) -> aaf.\nThe premise (True AND False) is False, thus, the value of aaf can not be deduced and is set to N/A.\naaa is True.\naab is False.\n(aaa AND aab) = (True AND False) -> aac.\nThe premise (True AND False) is False, thus, the value of aac can not be deduced and is set to N/A.\n(aac OR aaf) = (N/A OR N/A) -> aag.\nGiven none of the children are True and at least one is N/A, thus, the value of premise is N/A. Thus, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aad is True.\naae is False.\n(aad and aae) -> aaf.\naaa is True.\naab is False.\n(aaa and aab) -> aac.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": true,
+        "vars": "aaf",
+        "inferences": "aaa is True.\naab is True.\n(aaa AND aab) = (True AND True) -> aac.\nThe premise (True AND True) is True, thus, the value of aac is True.\naad is False.\n(NOT aad) = (NOT False) -> aae.\nThe premise (NOT False) is True, thus, the value of aae is True.\n(aac AND aae) = (True AND True) -> aaf.\nThe premise (True AND True) is True, thus, the value of aaf is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aaa is True.\naab is True.\n(aaa and aab) -> aac.\naad is False.\n(NOT aad) -> aae.\n(aac and aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": true,
+        "vars": "aag",
+        "inferences": "aad is True.\naaa is False.\naab is True.\n(aaa OR aab) = (False OR True) -> aac.\nThe premise (False OR True) is True, thus, the value of aac is True.\naae is True.\n(aad OR aae) = (True OR True) -> aaf.\nThe premise (True OR True) is True, thus, the value of aaf is True.\n(aac OR aaf) = (True OR True) -> aag.\nThe premise (True OR True) is True, thus, the value of aag is True.\n\nThus, the answer is <<<True>>>",
+        "descriptions": "aad is True.\naaa is False.\naab is True.\n(aaa or aab) -> aac.\naae is True.\n(aad or aae) -> aaf.\n(aac or aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aaf",
+        "inferences": "aaa is True.\n(NOT aaa) = (NOT True) -> aab.\nThe value of the premise (NOT True) is False. Thus, the value of aab cannot be deduced, and is set to N/A.\naad is True.\naac is False.\n(aac AND aad) = (False AND True) -> aae.\nThe premise (False AND True) is False, thus, the value of aae can not be deduced and is set to N/A.\n(aab AND aae) = (N/A AND N/A) -> aaf.\nGiven at least one of the children's value is N/A, the value of aaf cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aaa is True.\n(NOT aaa) -> aab.\naad is True.\naac is False.\n(aac and aad) -> aae.\n(aab and aae) -> aaf.\nDeduce the result of aaf."
+    },
+    {
+        "answers": "N/A",
+        "vars": "aag",
+        "inferences": "aad is True.\naae is False.\n(aad OR aae) = (True OR False) -> aaf.\nThe premise (True OR False) is True, thus, the value of aaf is True.\naaa is True.\naab is False.\n(aaa AND aab) = (True AND False) -> aac.\nThe premise (True AND False) is False, thus, the value of aac can not be deduced and is set to N/A.\n(aac AND aaf) = (N/A AND True) -> aag.\nGiven at least one of the children's value is N/A, the value of aag cannot be deduced and is set to N/A.\n\nThus, the answer is <<<N/A>>>",
+        "descriptions": "aad is True.\naae is False.\n(aad or aae) -> aaf.\naaa is True.\naab is False.\n(aaa and aab) -> aac.\n(aac and aaf) -> aag.\nDeduce the result of aag."
+    },
+    {
+        "descriptions": "aaa is False.\naad is False.\naab is False.\n(NOT aad) -> aae.\n(aaa and aab) -> aac.\n(aac or aae) -> aaf.\nDeduce the result of aaf.",
+        "inferences": "aaa is False.\naad is False.\naab is False.\n(NOT aad) = (NOT False) -> aae.\nThe value of the premise (NOT False) is True, thus, the value of aae is True.\n(aaa AND aab) = (False AND False) -> aac.\nThe premise (False AND False) is False, thus, the value of aac is False.\n(aac OR aae) = (False OR True) -> aaf.\nThe premise (False OR True) is True, thus, the value of aaf is True.\n\nThus, the answer is <<<True>>>",
+        "answers": true
+    },
+    {
+        "descriptions": "aae is False.\naaa is False.\naad is False.\naab is True.\n(aaa and aab) -> aac.\n(aad or aae) -> aaf.\n(aac and aaf) -> aag.\nDeduce the result of aag.",
+        "inferences": "aae is False.\naaa is False.\naad is False.\naab is True.\n(aaa AND aab) = (False AND True) -> aac.\nThe premise (False AND True) is False, thus, the value of aac is False.\n(aad OR aae) = (False OR False) -> aaf.\nThe premise (False OR False) is False, thus, the value of aaf is False.\n(aac AND aaf) = (False AND False) -> aag.\nThe premise (False AND False) is False, thus, the value of aag is False.\n\nThus, the answer is <<<False>>>",
+        "answers": "N/A"
+    }
+]
