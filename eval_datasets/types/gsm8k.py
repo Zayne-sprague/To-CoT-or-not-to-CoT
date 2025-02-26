@@ -245,7 +245,9 @@ Q: {prompt}
 
         r = random.Random(1)
         r.shuffle(examples)
-        if self.use_llama_3_1_prompts:
+
+        if self.use_llama_3_1_prompts and False:
+            # This is how we got the prompts originally. However, Llama has since changed their evaluations and deleted their original HF data :P
             examples = self.load_llama_3_1_prompts(examples)
         return examples
 
