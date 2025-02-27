@@ -138,9 +138,3 @@ Because the datasets are changing on Huggingface and Llama 3.1 evals are no long
 ## Plots, Charts, and Analyses
 
 We include in this repo all the main figures and analyses from our paper.  However, they all pull from our google sheets or Huggingface Repo.  If you want to reproduce our results with your own data, you'll have to update how we load in the data (though that should be pretty easy). We are noting this here just so people know that the outputs from `zeroshot_cot_experiments.py` are not automatically hooked into all the plotting scripts.
-
-## Calling Models
-
-We made our own special way to call models :P 
-
-You can see examples in `scripts/example__calling_models.py` for details on how to do it. Really it was just a way for us to unify calling stuff back before a ton of other packages came out that did this.
