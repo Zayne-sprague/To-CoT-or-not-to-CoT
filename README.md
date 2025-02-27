@@ -1,3 +1,7 @@
+
+<h1 align="center">To CoT or To Not CoT?</h1>
+<h3 align="center" style="font-size: 20px; margin-bottom: 4px">Chain-of-thought helps mainly on math and symbolic reasoning</h3>
+
 <p align="center">
   <a href="https://arxiv.org/abs/2409.12183" target="_blank">
     <picture>
@@ -6,9 +10,6 @@
     </picture>
   </a>
 </p>
-
-<h1 align="center">To CoT or To Not CoT?</h1>
-<h3 align="center" style="font-size: 20px; margin-bottom: 4px">Chain-of-thought helps mainly on math and symbolic reasoning</h3>
 <br/>
 
 ## Overview
