@@ -32,11 +32,16 @@ pip install -r requirements.txt
 Fill the API keys for the models you would like to run in `key_handler.py`
 
 Most script already will set the os environment variables for you, but you can manually set them by importing this file and calling the set env function.
+
 ```python
 from key_handler import KeyHandler
 #...
 KeyHandler.set_env_key()
 ```
+
+### Installing Gemini
+
+To get Gemini working you need a `google_service_key.json`, a project ID, a project location, threshold limits setup (on the console) and then to be logged in via the CLI.  There has to be an easier way, but for now that's how this was setup.
 
 ## [Optional] Install Redis for caching  
 
@@ -96,20 +101,14 @@ print (f"CoT was correct: {examples_cot_metrics[0]['correct']}")
 print(f"Direct Answer was correct: {examples_directanswer_metrics[0]['correct']}")
 ```
 
-# 📖 Quick Tutorials
+# 📖 Tutorial
 
-[Getting started]()
-[Rollouts and batching]()
-[Partial completions]()
-[hosted API models with vLLM]()
-[Adding a new dataset]()
+We have a [tutorial notebook]() to help users go more indepth on how the code works and how to run your own custom evaluations.
+
+# Recreating results from the paper
 
 
-
-# Recreating our Evaluations and Analyses
-
-
-### Zero-shot vs Few-shot vs CoT vs Direct Answer
+## Zero-shot vs Few-shot vs CoT vs Direct Answer
 
 This analysis is done per model and can be uploaded to your Huggingface repo but will also be stored locally.
 
@@ -135,7 +134,7 @@ The above will run only 10 questions from the 3 AGIEval `lsat` slices.
 ### Note
 Because the datasets are changing on Huggingface and Llama 3.1 evals are no longer there (Llama changes their eval repos) our script uses the prompts stored in our own HF repo to keep everything reproducible.
 
-## Plots Charts and Analyses 
+## Plots, Charts, and Analyses
 
 We include in this repo all the main figures and analyses from our paper.  However, they all pull from our google sheets or Huggingface Repo.  If you want to reproduce our results with your own data, you'll have to update how we load in the data (though that should be pretty easy). We are noting this here just so people know that the outputs from `zeroshot_cot_experiments.py` are not automatically hooked into all the plotting scripts.
 
@@ -144,9 +143,3 @@ We include in this repo all the main figures and analyses from our paper.  Howev
 We made our own special way to call models :P 
 
 You can see examples in `scripts/example__calling_models.py` for details on how to do it. Really it was just a way for us to unify calling stuff back before a ton of other packages came out that did this.
-
-## Installing Gemini
-
-To get Gemini working you need a `google_service_key.json`, a project ID, a project location, threshold limits setup (on the console) and then to be logged in via the CLI.  There has to be an easier way, but for now that's how this was setup.
-
-
