@@ -1,14 +1,15 @@
+
+<h1 align="center">To CoT or To Not CoT?</h1>
+<h3 align="center" style="font-size: 20px; margin-bottom: 4px">Chain-of-thought helps mainly on math and symbolic reasoning</h3>
+
 <p align="center">
   <a href="https://arxiv.org/abs/2409.12183" target="_blank">
     <picture>
       <source media="(prefers-color-scheme: light)" width="400px" srcset="./imgs/fig1.png">
-      <img alt="Analysis figure" width="400px" src="./imgs/fig1.png">
+      <img alt="Analysis figure" width="700px" src="./imgs/fig1.png">
     </picture>
   </a>
 </p>
-
-<h1 align="center">To CoT or To Not CoT?</h1>
-<h3 align="center" style="font-size: 20px; margin-bottom: 4px">Chain-of-thought helps mainly on math and symbolic reasoning</h3>
 <br/>
 
 ## Overview
@@ -103,7 +104,7 @@ print(f"Direct Answer was correct: {examples_directanswer_metrics[0]['correct']}
 
 # 📖 Tutorial
 
-We have a [tutorial notebook]() to help users go more indepth on how the code works and how to run your own custom evaluations.
+We have a [tutorial notebook](https://github.com/Zayne-sprague/To-CoT-or-not-to-CoT/blob/main/tutorials.ipynb) to help users go more in-depth on how the code works and how to run your own custom evaluations.
 
 # Recreating results from the paper
 
@@ -137,9 +138,3 @@ Because the datasets are changing on Huggingface and Llama 3.1 evals are no long
 ## Plots, Charts, and Analyses
 
 We include in this repo all the main figures and analyses from our paper.  However, they all pull from our google sheets or Huggingface Repo.  If you want to reproduce our results with your own data, you'll have to update how we load in the data (though that should be pretty easy). We are noting this here just so people know that the outputs from `zeroshot_cot_experiments.py` are not automatically hooked into all the plotting scripts.
-
-## Calling Models
-
-We made our own special way to call models :P 
-
-You can see examples in `scripts/example__calling_models.py` for details on how to do it. Really it was just a way for us to unify calling stuff back before a ton of other packages came out that did this.
